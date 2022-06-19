@@ -1,6 +1,4 @@
-
-
-@import ../node_modules/normalize.css/normalize.css;
+@import '../node_modules/normalize.css/normalize.css';
 
 :root{
     --color-black: #515159;
@@ -11,7 +9,7 @@
 
 html,
 body{
-    word-brea:keep-all;
+    word-break:keep-all;
     font-size:20px;
     letter-spacing: -0.2px;
     font-family:Pretendard;
@@ -53,11 +51,14 @@ header > div{
     padding: 1.3em 2em;
 }
 
-header > div > button{
+button{
     cursor:pointer;
     border: none;
     background-color: transparent;
-    font-size:16px;
+}
+
+button:hover{
+    opacity:0.6;
 }
 
 .main{
@@ -66,7 +67,7 @@ header > div > button{
     max-width:1000px;
     width:100%;
     margin: 0 auto;
-    padding-top:4em;
+    padding:4em 2em;
 }
 
 section{
@@ -84,11 +85,41 @@ section{
 }
 
 .portfolio{
+    margin-top:5em;
     display:flex;
+}
+
+.portfolio:first-of-type{
+    margin:0;
 }
 
 .portfolio > div{
     width:50%;
+}
+
+.portfolio > div:last-of-type{
+    margin-left:2.5em;
+}
+
+.portfolio > div:first-of-type > p{
+    margin:0 0 1em 0;
+}
+
+.portfolio .title{
+    display: flex;
+}
+
+.portfolio .title > button{
+    font-size:1.2em;
+}
+
+.title > h3{
+    margin:0 0.2em 0 0;
+}
+
+img{
+    width:100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1024px){
