@@ -98,6 +98,7 @@ li::marker{
 }
 
 .link{
+    color:#47B5FF;
     display:block;
 }
 
@@ -151,6 +152,7 @@ img{
 }
 
 .link{
+    color: #667a8e;
     padding: 0 0.3rem;
 }
 
